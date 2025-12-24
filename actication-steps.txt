@@ -1,0 +1,39 @@
+Download the ms-office-2021-professional-plus Steps:
+================================================================================
+                    SECTION 1: INSTALLATION
+================================================================================
+
+STEP1: Navigate to the Folder where you kept configurations & setup file of office 2021
+
+STEP2: Then right click on empty space and open with powershell or cmd
+
+STEP3: Paste the code
+
+    CODE: .\setup.exe /configure .\configuration-Office2021Enterprise.xml    
+
+STEP4: Wait for Download, After Complete download close and open the cmd or powershell
+
+================================================================================
+                    SECTION 2: ACTIVATION PROCEDURE
+================================================================================
+
+
+Activate the Office2021Enterprise:
+
+START: Open powershell as administrator
+
+STEP1.  cd /d %ProgramFiles%\Microsoft Office\Office16     :-for 64bit-Operating-system
+
+
+STEP2.  for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+
+
+STEP3.  cscript ospp.vbs /setprt:1688
+STEP4.  cscript ospp.vbs /unpkey:6F7TH >nul
+STEP5.  cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+STEP6.  cscript ospp.vbs /sethst:e8.us.to
+STEP7.  cscript ospp.vbs /act
+
+================================================================================
+                    SECTION 3: ACTIVATED enjoy
+================================================================================
